@@ -13,4 +13,4 @@ jobs:
           python-version: '3.10'
 
       - name: Run script
-        run: python ../../app/app.py
+        run: python app/app.py
