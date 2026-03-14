@@ -3,7 +3,7 @@ pipline {
   stage {
     stage ('Clone Repo') {
       steps {
-        git '/Users/ssantoshkumar/Documents/Learning/devops-practice'
+        git 'git@github.com:santosh9343kumar/devops-practice.git'
       }
     }
 
