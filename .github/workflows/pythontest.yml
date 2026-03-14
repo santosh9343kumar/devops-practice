@@ -1,0 +1,16 @@
+name: Python test
+on: push
+jobs: 
+  Python-Job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run script
+        run: python ../../app/app.py
